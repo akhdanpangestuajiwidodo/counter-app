@@ -17,10 +17,11 @@ export default class CounterClass extends React.Component<{}, State>{
     render(){
         return (
             <div>
-                <p> a {this.state.counter} </p>
+                <h4 className="h4class">Halaman Counter Class</h4>
+                <p> {this.state.counter} </p>
                 <button onClick={() => this.setState({counter: this.state.counter + 1})} className='increment'>Increment</button>
                 <button onClick={() => this.setState({counter: this.state.counter - 1})} className='decrement'>Decrement</button>
-        </div>
+            </div>
         );
     }
 }

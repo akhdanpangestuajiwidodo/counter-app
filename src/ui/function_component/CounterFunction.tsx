@@ -8,13 +8,16 @@ function CounterFunction(){
 
     return (
     <div>
-      <p> {count} </p>
-      <button onClick={() => setCount(count + 1)} className='increment'>
-        Increment
-      </button>
-      <button onClick={() => setCount(count - 1)} className='decrement'>
-        Decrement
-      </button>
+        <div>
+            <h4 className="h4function">Halaman Function Class</h4>
+            <p> {count} </p>
+            <button onClick={() => setCount(count + 1)} className='increment'>
+            Increment
+            </button>
+            <button onClick={() => setCount(count - 1)} className='decrement'>
+            Decrement
+            </button>
+        </div>
     </div>
   );
 
