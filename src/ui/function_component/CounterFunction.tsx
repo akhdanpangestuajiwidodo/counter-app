@@ -1,11 +1,11 @@
 import React, {useState} from "react";
-import '../../css/CounterFunction.css'
+import '../../css/Counter.css'
 
 function CounterFunction(){
 
     // Hook useState
     const [count, setCount] = useState(0);
-    
+
     return (
     <div>
       <p> {count} </p>
