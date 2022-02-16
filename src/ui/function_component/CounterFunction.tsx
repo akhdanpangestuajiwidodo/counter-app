@@ -1,23 +1,18 @@
 import React, {useState} from "react";
+import '../../css/CounterFunction.css'
 
 function CounterFunction(){
 
     // Hook useState
     const [count, setCount] = useState(0);
-
-    //Fungsi untuk penambahan
-    const addition = () => setCount(count + 1);
-
-    //Fungsi untuk pengurangan
-    const subtraction = () => setCount(count - 1);
-
+    
     return (
     <div>
       <p> {count} </p>
-      <button onClick={addition}>
+      <button onClick={() => setCount(count + 1)} className='increment'>
         Increment
       </button>
-      <button onClick={subtraction}>
+      <button onClick={() => setCount(count - 1)} className='decrement'>
         Decrement
       </button>
     </div>
