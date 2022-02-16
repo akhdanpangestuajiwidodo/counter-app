@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import './App.css';
-import './ui/function_component/CounterFunction'
-import CounterClass from './ui/class_component/CounterClass'
-import {CounterFunction} from './ui/function_component/CounterFunction';
+import './components/UI/FunctionComponent/CounterFunction'
+import {CounterClass} from './components/UI/ClassComponent/CounterClass'
+import {CounterFunction} from './components/UI/FunctionComponent/CounterFunction';
 
 function App() {
 

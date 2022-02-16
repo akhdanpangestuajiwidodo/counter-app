@@ -1,5 +1,6 @@
-import React, {useState} from "react";
-import '../../css/Counter.css'
+import {useState} from "react";
+import '../../../styles/counter.css';
+import { HeadingFunctionPage } from "../../elements/Heading/HeadingFunctionPage/HeadingFunctionPage";
 
 function CounterFunction(){
 
@@ -9,7 +10,7 @@ function CounterFunction(){
     return (
     <div>
         <div>
-            <h4 className="h4function">Halaman Function Class</h4>
+            <HeadingFunctionPage />
             <p> {count} </p>
             <button onClick={() => setCount(count + 1)} className='increment'>
             Increment
